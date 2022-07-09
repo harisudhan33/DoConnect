@@ -1,0 +1,80 @@
+USE [DoConnectDB]
+GO
+/****** Object:  Table [dbo].[User]    Script Date: 01/01/2002 02:02:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[User](
+	[Sno] [varchar](50) NULL,
+	[UserName] [varchar](50) NULL,
+	[Password] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Question]    Script Date: 01/01/2002 02:02:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Question](
+	[Qno] [varchar](50) NULL,
+	[UserName] [varchar](50) NULL,
+	[Question] [varchar](50) NULL,
+	[Status] [varchar](50) NULL,
+	[Answer] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[image]    Script Date: 01/01/2002 02:02:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[image](
+	[ImgNo] [varchar](50) NULL,
+	[FileName] [varchar](50) NULL,
+	[Path] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Chat]    Script Date: 01/01/2002 02:02:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Chat](
+	[UserName] [varchar](50) NULL,
+	[Chat] [varchar](50) NULL,
+	[OtherUserName] [varchar](50) NULL,
+	[Reply] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+/****** Object:  Table [dbo].[Admin]    Script Date: 01/01/2002 02:02:56 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Admin](
+	[Sno] [varchar](50) NULL,
+	[UserName] [varchar](50) NULL,
+	[Password] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
